@@ -5,7 +5,7 @@ const itemRoutes = require('./routes/items');
 const cors = require("cors")
 
 const app = express();
-const PORT = 5000; // You can use any available port
+const PORT = process.env.PORT || 5000; 
 
 // Middleware
 app.use(bodyParser.json());
