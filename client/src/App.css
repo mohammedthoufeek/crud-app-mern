@@ -1,0 +1,77 @@
+.container{
+    width: min(1000px,90%);
+    margin: auto;
+}
+
+.item{
+    background: rgb(171, 239, 226);
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.item .name {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+.item .name svg {
+color:red;
+cursor: pointer;
+font-size: 24px;
+}
+
+.item .desc {
+    margin-top: 10px;
+    text-indent: 20px;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: min(800px,95%);
+    margin: auto;
+    gap: 20px;
+}
+
+
+input {
+    padding: 10px;
+    width: 100%;
+    max-width: 250px !important;
+    margin: auto;
+}
+
+
+.name-inp {
+ 
+}
+
+.desc-inp {
+
+}
+
+button {
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 0;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+h1 {
+    margin: auto;
+    width: 90%;
+    padding:20px;
+}
+
+
+input:focus{
+    outline: 1px solid black;
+    
+}
