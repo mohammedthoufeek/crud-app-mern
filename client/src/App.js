@@ -59,16 +59,16 @@ function App() {
 
   return (
     <div>
-      <h1>Items</h1>
+      <h1 >ONLINE NOTES</h1>
       <div className="inputs">
-      <input placeholder="Enter Name" className="name-inp" type="text" value={itemName} onChange={handleItemNameChange} />
-      <input placeholder="Enter Description"
-      className="desc-inp"
-        type="text"
-        value={description}
-        onChange={handleItemDescriptionChange}
-      />
-      <button className="submit" onClick={createItem}>Add Item</button>
+        <input placeholder="Enter Title" className="name-inp" type="text" value={itemName} onChange={handleItemNameChange} />
+        <input placeholder="Enter Notes"
+          className="desc-inp"
+          type="text"
+          value={description}
+          onChange={handleItemDescriptionChange}
+        />
+        <button className="submit" onClick={createItem}>Add Note</button>
       </div>
       <br />
       <br />
@@ -78,9 +78,9 @@ function App() {
         {items.map((item) => (
           <div className="item" key={item._id}>
             <div className="name">{item.name} <RiDeleteBinLine
-                onClick={() => deleteItem(item._id)}
-                className="delete-icon"
-              />  </div>
+              onClick={() => deleteItem(item._id)}
+              className="delete-icon"
+            />  </div>
             <div className="desc">{item.description}</div>
           </div>
         ))}
